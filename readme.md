@@ -7,3 +7,4 @@
 1. 统一换行符为`LF`: git config --global core.eol lf
 2. 将自动转换关闭: git config --global core.autocrlf false
 3. 禁止混用`LF`和`CRLF`两种换行符: git config --global core.safecrlf true
+    

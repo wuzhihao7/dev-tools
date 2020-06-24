@@ -1,2 +1,5 @@
-# Set the default behavior, in case people don't have core.autocrlf set.
-* text eol=lf
+*  text=auto
+*.txt  text eol=lf
+*.sh  text eol=lf
+*.java text eol=lf
+*.md text eol=lf
