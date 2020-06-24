@@ -4,5 +4,6 @@
 2. 文件编码：UTF-8
 3. 文件换行符：unix（LF）
 ## Git规范
-1. 拒绝提交包含混合换行符的文件：git config --global core.safecrlf true
-2. 提交时转换为LF，检出时不转换：git config --global core.autocrlf input
+1. 统一换行符为`LF`: git config --global core.eol lf
+2. 将自动转换关闭: git config --global core.autocrlf false
+3. 禁止混用`LF`和`CRLF`两种换行符: git config --global core.safecrlf true
