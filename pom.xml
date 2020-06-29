@@ -13,8 +13,6 @@
         <encoding>UTF-8</encoding>
         <project.build.sourceEncoding>${encoding}</project.build.sourceEncoding>
         <project.reporting.outputEncoding>${encoding}</project.reporting.outputEncoding>
-        <project.resources.sourceEncoding>${encoding}</project.resources.sourceEncoding>
-        <archetype.encoding>${encoding}</archetype.encoding>
         <checkstyle.config>google_checks.xml</checkstyle.config>
         <jdk.version>11</jdk.version>
         <jdk.version.compatibility>8</jdk.version.compatibility>
@@ -41,6 +39,12 @@
                                 <requireJavaVersion>
                                     <version>${jdk.version}</version>
                                 </requireJavaVersion>
+                                <requireProperty>
+                                    <property>project.build.sourceEncoding</property>
+                                    <message>Encoding must be set and at UTF-8!</message>
+                                    <regex>UTF-8</regex>
+                                    <regexMessage>Encoding must be set and at UTF-8</regexMessage>
+                                </requireProperty>
                             </rules>
                         </configuration>
                     </execution>
